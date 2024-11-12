@@ -1,0 +1,158 @@
+<html>
+ <head>
+  <title>
+   Cadastrar-se
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .header p {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        .form-group .input-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .input-group img {
+            width: 40px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        .form-group .input-group input {
+            flex: 1;
+        }
+        .form-group .password-group {
+            position: relative;
+        }
+        .form-group .password-group input {
+            width: calc(100% - 30px);
+        }
+        .form-group .password-group{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #b3b3b3;
+        }
+        .form-group .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-group .checkbox-group label {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #b3b3b3;
+        }
+        .footer img {
+            width: 50px;
+            margin-top: 20px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <h1>
+     Cadastrar-se
+    </h1>
+    <p>
+     Informe seus dados para criar sua conta
+    </p>
+   </div>
+   <div class="form-group">
+    <input placeholder="Nome completo" type="text"/>
+   </div>
+   <div class="form-group">
+    <div class="input-group">
+     <img alt="Brazil flag" height="25" src="data:image/png;base64,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" width="40"/>
+     <input placeholder="Celular" type="text"/>
+    </div>
+   </div>
+   <div class="form-group">
+    <input placeholder="Email" type="email"/>
+   </div>
+   <div class="form-group password-group">
+    <input placeholder="Senha" type="password"/>
+    <i class="fas fa-eye">
+    </i>
+   </div>
+   <div class="form-group checkbox-group">
+    <input id="promotions" type="checkbox"/>
+    <label for="promotions">
+     Aceito receber promoções por e-mail.
+    </label>
+   </div>
+   <button class="btn" onclick="window.location.href='Lista_serviços.html'">
+    Cadastrar
+   </button>
+   <div class="footer">
+    <p>
+     Ao acessar, você está de acordo com os Termos de Uso e Política de Privacidade.
+    </p>
+    <img alt="Logo" height="100px" src="tela.png" width="100px"/>
+   </div>
+  </div>
+ </body>
+</html>

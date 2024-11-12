@@ -1,0 +1,191 @@
+<html>
+ <head>
+  <title>
+   Salão Corte Nobre
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #202020;
+            color: #fff;
+        }
+        .container {
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .header .status {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #00e0c6;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .header .title {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            text-align: left;
+        }
+        .header .title h1 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .header .title p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .actions i {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 90%;
+            padding: 12px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .category {
+            width: 45%;
+            text-align: center;
+            margin-bottom: 15px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .category .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .category .overlay h2 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        .category .overlay button {
+            margin-top: 8px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4d4d;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .category p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+        .category:hover img {
+            transform: scale(1.05);
+            transition: 0.3s ease;
+        }
+        .category:hover .overlay {
+            background: rgba(0, 0, 0, 0.8);
+            transition: 0.3s ease;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <img alt="Barber shop background image" src="https://storage.googleapis.com/a1aa/image/eyanmJGgoEWoTiR1gW1DDh20ZGegp8z2FUggpUmJ9P2N7DwTA.jpg"/>
+    <div class="status">
+     ABERTO
+    </div>
+    <div class="title">
+     <h1>Salão Corte Nobre</h1>
+     <p>João Pessoa - 5.6kms</p>
+    </div>
+   </div>
+   <div class="actions">
+    <i class="fas fa-phone"></i>
+    <i class="fas fa-map-marker-alt"></i>
+    <i class="fas fa-share-alt"></i>
+   </div>
+   <div class="search-bar">
+    <input placeholder="Pesquisar" type="text"/>
+   </div>
+   <div class="categories">
+    <div class="category">
+     <img alt="Máquinas image" src="maquinas (1).png"/>
+     <div class="overlay">
+      <h2>LINHA COMPLETA MÁQUINAS</h2>
+      <button onclick="window.location.href='Lista_produtos.html'">CONFERIR</button>
+     </div>
+    </div>
+    <div class="category">
+     <img alt="Acessórios image" src="tela2 (1).png"/>
+     <div class="overlay">
+      <h2>LINHA COMPLETA ACESSÓRIOS</h2>
+      <button>CONFERIR</button>
+     </div>
+    </div>
+    <div class="category">
+     <img alt="Produtos image" src="linha completa (2).png"/>
+     <div class="overlay">
+      <h2>LINHA COMPLETA PRODUTOS</h2>
+      <button>CONFERIR</button>
+     </div>
+    </div>
+    <div class="category">
+     <img alt="Cortes image" src="https://s3-alpha-sig.figma.com/img/b5e2/d821/821dc45d94a88f5981265329667210cf?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FHuEFlaXI4-qHwQu9x06uqxBs~2qHX4hRYDxcpldvncYevkuYKX2ih8ORNM7e7RZZvqcDPKAiAj4qSSwNRsTMj-CWnd9Gy~espam0IExdtiQ~ScwGakezvNhAdSZpxzKR8Kc7KLLvt1oO3qrzuiE0i91W9BanfpY5SwayuNFyHzqCRxFercKruPCd~CSdZiE6UUg9L35bcGQ1gau9U2jKm3Obkk0EHAJtrQGaSYEWByASAe5GljxGK9028e26QgGZ~b9QvFBDgouvHE7rvGYHFIadmbahRtpsqFfn-3sEvhgtPUmrbd5pm7Ds-vC2QIRuz5lbont1hLfiYiJKeHc8A__"/>
+     <div class="overlay">
+      <h2>LINHA COMPLETA CORTES</h2>
+      <button>CONFERIR</button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #2e2b2b; 
+}
+.login{
+    border: 1px solid black;
+    width: 400px;
+    height: 550px;
+    background: url(https://imgs.search.brave.com/oEJ6IHUQRwsPhRH3cUd8bjIZ5bjhyEPQcZ28V4KFT1Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2l4c3RhdGlj/LmNvbS9tZWRpYS82/MGQ0M2NfMGE2NjFm/YWUwZGI1NDk0MWE5/NzNkNDllNjM3MDMx/N2J-bXYyLmpwZWcv/djEvY3JvcC94XzM5/Mix5XzAsd182NDAs/aF82NDgvZmlsbC93/XzYzOSxoXzY0OCxh/bF9jLHFfODUsZW5j/X2F1dG8vZXNwYWNv/LXNlbm9yLWJhcmJl/YXJpYS5qcGVn);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+form{
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);  
+    margin-bottom: 60px;  
+}
+
+label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+input{
+    background: rgba(255, 255, 255, 0.3);
+     height: 40px; 
+     line-height: 40px; 
+     border-radius: 20px; 
+     padding: 0px 20px;
+     border: none;
+     margin-bottom: 20px;
+     color: white;
+}
+
+button{
+     background: rgba(45, 126, 231); 
+     height: 40px; line-height: 40px;
+     border-radius: 40px; 
+     border: none;
+     margin: 10px 0px;
+     box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+     color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form>
+            <img  height="100px"  src="https://s3-alpha-sig.figma.com/img/4801/98c3/4b52248b962775d53a5bbbbfce9aad95?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aHLlXRs8h41U-PeQSw02OOtHEgMsryHmB-wDnldVgfy2Yj7UdxRwXV6u8gdurI1duMRZlL8Jpek8D0Fh7uxg6YRQb1IDx4i7tvjA7Pl-MjtPlGlezl5nh63xgmqy35Hh3jFbn6t-ojgvFLAYFQiKujTgxuFDWjSKc8CBxpiuRCJXJ5CfPxR1Uo353yR3-Z5Tkj-dBmvibh-A3NhkndGA04-E3QDCjd0E3c-ggoxqIdTXbExbA-ok2Mryz8BnSPHQYU0IPzcAkhvReVicuDXMRvJiUZI7KDM2Q68Rl0GL5rD-DtC3wOdLwbGG~pUdk17rHzEp7y2ouBFOg09sHzAglg__" width="100px" >
+            <h1>login</h1>
+            <label for="">Usuário</label>
+            <input type="text" placeholder="">
+            <label for="">Senha</label>
+            <input type="senha">
+            <button>
+                Cadastrar
+            </button>
+            <p>Já tem login? </p>
+            <a class="login2"  href="Cadastro.html" >Login</a>
+        </form>
+    </div>
+</body>
+</html>
